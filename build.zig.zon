@@ -1,0 +1,32 @@
+.{
+    .name = .libtiff,
+    .version = "4.7.1",
+    .fingerprint = 0x295e4c781ecc56a6,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .zig_build_helper = .{
+            .url = "git+https://github.com/thuvasooriya/zig-build-helper.git#main",
+            .hash = "zig_build_helper-0.1.0-R4iqbKZ7AACrLlgp90FWp48lKilvLrSEARt3lPv-SpN2",
+        },
+        .upstream = .{
+            .url = "git+https://gitlab.com/libtiff/libtiff.git#61b5551e0c26685000435885c1ba6cf23b92d416",
+            .hash = "N-V-__8AAKLqegCAy9aHkAEN0NthIrcRc947NBphwRqU_a4o",
+        },
+        .zlib = .{
+            .url = "git+https://github.com/allyourcodebase/zlib#3599c16d41dbe749ae51b0ff7ab864c61adc779a",
+            .hash = "zlib-1.3.1-ZZQ7lc8NAABUbHzDe_cSWboCqMbrLkVwvFkKnojgeiT2",
+            .lazy = true,
+        },
+        .libjpeg_turbo = .{
+            .url = "git+https://github.com/thuvasooriya/libjpeg-turbo.git#main",
+            .hash = "libjpeg_turbo-3.1.0-csqIDQ97AADTJON3LOBZ9SC7ySuyEnSNu-C7ycNgAF4b",
+            .lazy = true,
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "README.md",
+    },
+}
